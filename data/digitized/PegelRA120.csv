@@ -1,0 +1,24 @@
+# Mass balance measurements for RA120 (location 120km from the ice margin) from volume 1 (p155 onwards)
+# date: date of ascent [YYYY-MM-DD]
+# distance to margin: distance to margin [km]
+# stake height: height of the mass balance stake [m]
+# change: change of height from the privous measurement [m]
+# change since beginning: change since the first measurement [m]
+# comment: additional info
+date;distance to margin;stake height;change;change since beginning;comment
+1930-10-08;120;1.78;0.0;0.0;
+1930-08-24;120;1.77;0.01;0.01;
+1930-08-24;120;1.72;0.0;0.01;new stake at 125km 
+1930-03-09;120;1.69;0.03;0.04;
+1930-01-10;120;1.37;0.32;0.36;
+1930-02-10;120;1.31;0.06;0.42;
+1931-09-04;120;1.01;0.3;0.72;
+1931-04-29;120;0.93;0.08;0.8;
+1931-03-06;120;0.64;0.29;1.09;
+1931-06-18;120;0.67;-0.03;1.06;
+1931-07-23;120;0.69;-0.02;1.04;
+1931-07-29;120;0.68;0.01;1.05;
+1931-01-08;120;0.7;-0.02;1.03;
+1931-08-20;120;0.67;0.03;1.06;
+1931-03-09;120;0.43;0.24;1.3;
+1931-09-09;120;0.43;0.0;1.3;

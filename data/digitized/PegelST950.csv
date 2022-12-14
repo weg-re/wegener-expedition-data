@@ -1,0 +1,20 @@
+# Mass balance measurements for ST950 (location at 950 m a.s.l. at the Kamarujuk glacier) from volume 1 (p159 onwards)
+# date: date of ascent [YYYY-MM-DD]
+# digit_stake length: length of the mass balance stake submerged in the glacier [m]
+# z: altitude above sea level [m]
+# diff: change of length from the privous measurement [m]
+# cum_deltaz: change of length since the first measurement [m]
+# comment: additional info
+date;digit_stake length;z;diff;cum_deltaz;comment;Unnamed: 6
+1929-07-31;4.2;950;0.0;0.0;;
+1929-08-08;3.95;950;-0.25;-0.25;;
+1929-08-09;3.43;950;-0.52;-0.77;;
+1930-01-07;3.45;950;0.02;-0.75;;
+1930-10-07;3.35;950;-0.1;-0.85;;
+1930-04-08;2.33;950;-1.02;-1.87;;
+1930-08-08;2.26;950;-0.07;-1.94;;
+1930-08-15;2.18;950;-0.08;-2.02;;
+1930-08-26;2.13;950;-0.05;-2.07;;
+1930-08-30;2.13;950;0.0;-2.07;;
+1930-12-09;1.89;950;-0.24;-2.31;;
+1931-07-28;1.27;950;-0.62;-2.93;;
