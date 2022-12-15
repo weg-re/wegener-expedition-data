@@ -18,8 +18,15 @@ pages, so by hand all data can be extracted.
 
 ### Digitized
 
-Part of the data was digitized into standard data formats (.csv). The folder ```digitized``` contains that digitized
-data
+Part of the data was digitized into standard data formats (.csv). The folder ```data/digitized``` contains that digitized
+data. The original data description (variables etc.) is in German, for the digitzed data everything was translated to English.
+All date formats were changed to YYYY-mm-dd.
+
+Files:
+
+- ```eismitte-soundings.csv```: vertical soundings made with balloons at the Eismitte (EM) station
+- PegelRA025.csv: .......
+- @Florina: please continue
 
 ## Code
 
