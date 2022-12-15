@@ -26,7 +26,7 @@ Files:
 
 - ```eismitte-soundings.csv```: vertical soundings made with balloons at the Eismitte (EM) station
 - ```PegelRA025.csv```: Stake measurements for surface mass balance (SMB) 25km from the ice margin 
-- ```PegelRA12ß.csv```: Stake measurements for surface mass balance (SMB) 120km from the ice margin 
+- ```PegelRA120.csv```: Stake measurements for surface mass balance (SMB) 120km from the ice margin 
 - ```PegelRA200.csv```: Stake measurements for surface mass balance (SMB) 200km from the ice margin
 - ```PegelST950.csv```: Stake measurements for surface mass balance (SMB) at 950 m a.s.l. on the Kamarujuk outlet glacier 
 - ```daily_mean_AT_FS_WS.csv```: daily mean air temperature at Winterhaus Weststation (WS) and at the fjord station (FS) at the coast of Kamarujuk fjord
