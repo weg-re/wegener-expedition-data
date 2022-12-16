@@ -6,8 +6,8 @@ and with 'data-wegener/soundings/eismitte-soundings.csv'
 
 ncep is in UTC. I assume that wegener is in CET.
 
-TODO: include t2m in cer20c
 """
+import string
 import xarray as xr
 import pandas as pd
 import numpy as np
@@ -36,6 +36,10 @@ wegener = wegener[wegener['Nr'] != 5]
 
 colors = sns.color_palette('colorblind', 3)
 colors[2] = 'black'
+sns.set(style='ticks', font_scale=1.25)
+plt.rcParams['grid.color'] = '.6'
+plt.rcParams['grid.linestyle'] = ':'
+plt.rcParams['lines.markersize'] = 10
 plt.figure(figsize=(14, 8))
 for iplot, nr in enumerate(wegener['Nr'].unique()):
     profile_wegener = wegener.query("Nr==@nr")
@@ -67,11 +71,9 @@ for iplot, nr in enumerate(wegener['Nr'].unique()):
     profile_cera20c['t_mean'] = profile_cera20c['t'].mean('number')
     profile_cera20c['t_spread'] = profile_cera20c['t'].std('number')
 
-    sns.set_style("ticks", {"grid.color": ".6", "grid.linestyle": ":"})
-    plt.rcParams['lines.markersize']=10
     marker = '*'
     plt.subplot(2, 3, iplot + 1)
-    plt.plot(profile_cera20c['t_mean'], profile_cera20c['z_abvsfc'], label='cera20c', marker=marker,
+    plt.plot(profile_cera20c['t_mean'], profile_cera20c['z_abvsfc'], label='CERA-20C', marker=marker,
              color=colors[0])
     plt.fill_betweenx(profile_cera20c['z_abvsfc'], profile_cera20c['t_mean'] - profile_cera20c['t_spread'],
                       profile_cera20c['t_mean'] + profile_cera20c['t_spread'],
@@ -81,13 +83,13 @@ for iplot, nr in enumerate(wegener['Nr'].unique()):
         plt.plot(profile_cera20c.sel(number=number)['t'], profile_cera20c['z_abvsfc'], linewidth=1, linestyle='--',
                  color=colors[0])
 
-    plt.plot(profile_ncep['t'], profile_ncep['level'], label='ncep', marker=marker,
+    plt.plot(profile_ncep['t'], profile_ncep['level'], label='20CRv3', marker=marker,
              color=colors[1])
     plt.fill_betweenx(profile_ncep['level'], profile_ncep['t'] - profile_ncep['t_spread'],
                       profile_ncep['t'] + profile_ncep['t_spread'],
                       color=colors[1], alpha=0.6)
 
-    plt.plot(profile_wegener['T'], profile_wegener['H'], label='wegener', marker=marker,
+    plt.plot(profile_wegener['T'], profile_wegener['H'], label='Wegener', marker=marker,
              color=colors[2])
 
     hmin = -20
@@ -99,11 +101,11 @@ for iplot, nr in enumerate(wegener['Nr'].unique()):
         (profile_cera20c['z_abvsfc'] < hmax) & (profile_cera20c['z_abvsfc'] > 0))
     # while still not all cera20c data was ready
     xmin = np.min(((ncep_visible_values['t'] - ncep_visible_values['t_spread']).min(),
-                      (cera20c_visible_values['t_mean'] - cera20c_visible_values['t_spread']).min(),
-                      np.min(profile_wegener['T'])))
+                   (cera20c_visible_values['t_mean'] - cera20c_visible_values['t_spread']).min(),
+                   np.min(profile_wegener['T'])))
     xmax = np.max(((ncep_visible_values['t'] + ncep_visible_values['t_spread']).max(),
-                      (cera20c_visible_values['t_mean'] + cera20c_visible_values['t_spread']).max(),
-                      np.max(profile_wegener['T'])))
+                   (cera20c_visible_values['t_mean'] + cera20c_visible_values['t_spread']).max(),
+                   np.max(profile_wegener['T'])))
     plt.xlim(xmin - 1, xmax + 1)
     plt.xlabel('T [°C]')
     plt.ylabel('heigh above ground [m]')
@@ -111,7 +113,10 @@ for iplot, nr in enumerate(wegener['Nr'].unique()):
     sns.despine()
     plt.grid(True)
     plt.title(f'{datetime_wegener} CET')
-plt.tight_layout()
+    # alphabetical subplot labels
+    plt.text(-0.1, 1.05, string.ascii_lowercase[iplot], transform=plt.gca().transAxes,
+             fontdict={'size': 18, 'weight': 'bold'})
+plt.tight_layout(pad=0.4)
 
 plt.savefig(f'plots/eismitte_profiles_vs_reanalysis.svg', bbox_inches='tight')
 plt.savefig(f'plots/eismitte_profiles_vs_reanalysis.png', bbox_inches='tight', dpi=300)
