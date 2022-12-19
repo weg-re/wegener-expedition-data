@@ -32,6 +32,7 @@ Files:
 - ```daily_mean_AT_FS_WS.csv```: daily mean air temperature at Winterhaus Weststation (WS) and at the fjord station (FS) at the coast of Kamarujuk fjord
 - ```snow_density_transect.csv```: Snow density at obsservation location along the transect from Weststation to Eismitte
 - ```snow_firn_density_Eismitte.csv```: Density observation of snow and firn at Eismitte
+- ```monthly_firntemperature_Eismitte.csv```: Monthly firn temperature at Eismitte in 0-15m depth
 
 
 ## Code
