@@ -1,0 +1,29 @@
+# Mass balance measurements for ST570 (location at 570 m a.s.l. at the Kamarujuk glacier) from volume 1 (p159 onwards)
+# date: date of ascent [YYYY-MM-DD]
+# digit_stake length: length of the mass balance stake submerged in the glacier [m]
+# z: altitude above sea level [m]
+# diff: change of length from the privous measurement [m]
+# cum_deltaz: change of length since the first measurement [m]
+# comment: additional info
+date;digit_stake length;z;diff;cum_deltaz;comment
+1929-03-08;4.7;570;0;0.0;
+1929-08-08;4.41;570;-0.29;-0.29;
+1929-08-09;3.39;570;-1.02;-1.31;
+1930-06-24;2.7;570;-0.69;-2.0;
+1930-06-26;2.65;570;-0.05;-2.05;
+1930-02-07;2.29;570;-0.36;-2.41;
+1930-05-07;2.22;570;-0.07-2.48;;
+1930-10-07;2.08;570;-0.14;-2.62;
+1930-07-13;1.93;570;-0.15;-2.77;
+1930-07-14;3.31;570;-0.01;-2.78;new,edited according to fig p 167
+1930-07-18;2.96;570;-0.35;-3.13;
+1930-07-18;2.98;570;0.02;-3.11;
+1930-07-22;2.61;570;-0.37;-3.48;
+1930-07-24;2.41;570;-0.2;-3.68;
+1930-07-25;2.33;570;-0.08;-3.76;
+1930-07-30;2.0;570;-0.33;-4.09;
+1930-04-08;1.63;570;-0.37;-4.46;
+1930-08-15;1.26;570;-0.37;-4.83;
+1930-08-19;1.26;570;0;-4.83;
+1930-08-26;1.23;570;-0.03;-4.86;
+1930-12-09;0.75;570;-0.48;-5.34;
