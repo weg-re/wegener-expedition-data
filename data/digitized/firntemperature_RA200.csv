@@ -1,0 +1,11 @@
+﻿# Firn temperature from volume 4.2 (p 352) for RA200
+# depth: depth below the surface [cm]
+# Firntemp: Firn temperature [°C] 
+depth;Firntemp
+0;0
+100;-11
+215;-19.2
+310;-21.2
+400;-22.7
+605;-24
+815;-23.95
