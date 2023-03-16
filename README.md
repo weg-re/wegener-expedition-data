@@ -32,7 +32,7 @@ Files:
 - ```PegelST050.csv```: Stake measurements for surface mass balance (SMB) at 50 m a.s.l. on the Kamarujuk outlet glacier 
 - ```PegelST270.csv```: Stake measurements for surface mass balance (SMB) at 270 m a.s.l. on the Kamarujuk outlet glacier 
 - ```PegelST570.csv```: Stake measurements for surface mass balance (SMB) at 570 m a.s.l. on the Kamarujuk outlet glacier 
-- ```daily_mean_AT_FS_WS.csv```: daily mean air temperature at Winterhaus Weststation (WS) and at the fjord station (FS) at the coast of Kamarujuk fjord
+- ```daily_mean_AT_FS_WS_UMQ.csv```: daily mean air temperature at Winterhaus Weststation (WS) and at the fjord station (FS) at the coast of Kamarujuk fjord and at the station in Uummannaq (UMQ)
 - ```snow_density_transect.csv```: Snow density at obsservation location along the transect from Weststation to Eismitte
 - ```snow_firn_density_Eismitte.csv```: Density observation of snow and firn at Eismitte
 - ```monthly_firntemperature_Eismitte.csv```: Monthly firn temperature at Eismitte in 0-15m depth
