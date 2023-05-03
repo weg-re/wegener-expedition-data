@@ -1,7 +1,6 @@
 # wegener-expedition-data
 
-This repository accompanies our publication "On the potential of the historic expedition material from the Wegener
-Greenland Expedition for modern Glaciological Research" by Aberman et al. 2023, in Scientific Reports.
+This repository accompanies our publication "Learning from Alfred Wegener’s pioneering field observations in West Greenland after a century of climate change" by Aberman et al. 2023, in Scientific Reports.
 
 ## Data
 
