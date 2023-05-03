@@ -1,7 +1,7 @@
 # wegener-expedition-data
 
 This repository accompanies our publication "On the potential of the historic expedition material from the Wegener
-Greenland Expedition for modern Glaciological Research" by Aberman et al., currently under review in Scientific Reports.
+Greenland Expedition for modern Glaciological Research" by Aberman et al. 2023, in Scientific Reports.
 
 ## Data
 
