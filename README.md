@@ -43,4 +43,4 @@ Files:
 
 
 ## Contact
-This repository is maintained by Florina Schalamon? Sebastian Scher? Jakob Abermann?
+This repository is maintained by the Weg_RE project team: Florina Schalamon, Sebastian Scher, Jakob Abermann, and Andreas Trügler.
